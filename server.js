@@ -10,8 +10,6 @@ app.use(cors({
 app.use(express.json()) // ล่ามแปลภาษา JSON ที่ประตู
 app.use('/api/auth' , authRoutes )
 
-
-
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`)
