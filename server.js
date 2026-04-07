@@ -5,7 +5,7 @@ const cors = require('cors')
 const authRoutes = require('./src/routes/auth.routes')
 
 app.use(cors({                      
-  origin: 'https://login-practice-frontend-ebon.vercel.app/'     
+    origin: /\.vercel\.app$/    
 }))
 app.use(express.json()) 
 app.use('/api/auth' , authRoutes )
